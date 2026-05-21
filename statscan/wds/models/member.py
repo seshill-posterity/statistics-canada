@@ -18,7 +18,7 @@ class Member(WDSBaseModel):
     parentMemberId: int | None = None  # API can return null
     memberNameEn: str
     memberNameFr: str
-    classificationCode: int | None = None  # API can return null
+    classificationCode: int | str | None = None  # API can return null
     classificationTypeCode: ClassificationType | int | str | None = (
         None  # API returns string
     )
